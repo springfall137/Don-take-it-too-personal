@@ -10,10 +10,14 @@
 <body>
     <h1>Upload an image to see if it's a cat or a dog!</h1>
     <input type="file" id="image-upload" />
+    <button id="predict-button" disabled>Predict!</button>
+
+    <progress id="progress-bar" value="0" max="100" style="width: 100%; display: none;"></progress>
     <div id="result"></div>
+    <div id="training-progress"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <script src="model_js/model.json"></script>
-    <script src="app.js"></script>
+    <script src="app.js"></script> <!-- 외부 JavaScript 파일을 포함합니다 -->
 </body>
 
 </html>
